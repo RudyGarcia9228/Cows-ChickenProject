@@ -29,7 +29,7 @@ function myFunction() {
 
   if (f < 0 || g < 0) {
     responsiveVoice.speak(
-      " sorry to bring the bad news, but. you have some animals with  missing legs somewhere.",
+      " sorry to bring the bad news but you have some animals with  missing legs somewhere",
       "US English Female",
       { pitch: 1.0 }
     );
@@ -38,7 +38,7 @@ function myFunction() {
     j.style = "color:#ff0000;";
   } else if (f == 0 && g == 0) {
     responsiveVoice.speak(
-      "you currently do not have any animals right now.",
+      "you currently do not have any animals right now",
       "US English Female",
       { pitch: 1.0 }
     );
@@ -47,11 +47,11 @@ function myFunction() {
     j.style = "color:darkblue;";
   } else if (Number.isInteger(f)) {
     responsiveVoice.speak(
-      "all animals are looking good. you have. " +
+      "all animals are looking good you have " +
         f +
-        " .cows. and., " +
+        " cows and " +
         g +
-        " .chicken with no missing head, or leg",
+        " chicken with no missing head, or leg",
       "US English Female",
       { pitch: 1.0 }
     );
